@@ -1,7 +1,6 @@
 'use client'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 
 export default function Footer() {

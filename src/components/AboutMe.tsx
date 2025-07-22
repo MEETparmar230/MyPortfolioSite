@@ -2,6 +2,7 @@
 
 import React, { JSX } from 'react';
 
+
 export default function About(): JSX.Element {
   return (
     <section className="my-10 md:px-4 lg:px-4">
@@ -11,7 +12,7 @@ export default function About(): JSX.Element {
         <div className="bg-[#1E1E1E] text-gray-200 py-10 px-6 rounded-lg shadow-lg">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-300">
-              Hi! I'm <span className="text-indigo-400 font-semibold">Mitkumar Parmar</span>, a passionate full-stack web developer focused on building clean,
+              Hi! I&apos;m <span className="text-indigo-400 font-semibold">Mitkumar Parmar</span>, a passionate full-stack web developer focused on building clean,
               responsive, and user-centric web applications.
             </p>
 
@@ -21,16 +22,16 @@ export default function About(): JSX.Element {
 
             <ul className="list-disc list-inside text-gray-400 space-y-1">
               <li>
-                <strong className="text-indigo-400">TripBNB</strong> – an Airbnb clone with map integration, image uploads, authentication, and reviews.
+                <strong className="text-indigo-400">TripBNB</strong> an Airbnb clone with map integration, image uploads, authentication, and reviews.
               </li>
               <li>
-                <strong className="text-indigo-400">Personal Finance Visualizer</strong> – a tool for tracking expenses, budgets, and insights, built using
+                <strong className="text-indigo-400">Personal Finance Visualizer</strong>  a tool for tracking expenses, budgets, and insights, built using
                 Next.js, MongoDB, Recharts, and Tailwind.
               </li>
             </ul>
 
             <p className="text-lg leading-relaxed text-gray-300">
-              🔧 I’m comfortable using tools like <span className="text-indigo-400">Git, Postman, Vercel, Render,</span> and <span className="text-indigo-400">Cloudinary</span> to manage
+              🔧 I&apos;m comfortable using tools like <span className="text-indigo-400">Git, Postman, Vercel, Render,</span> and <span className="text-indigo-400">Cloudinary</span> to manage
               workflows and deploy full-stack apps.
             </p>
 
@@ -63,7 +64,7 @@ export default function About(): JSX.Element {
             </p>
 
             <p className="text-lg leading-relaxed text-gray-300">
-              Let’s connect and create something awesome together!
+              Let&apos;s connect and create something awesome together!
             </p>
           </div>
         </div>

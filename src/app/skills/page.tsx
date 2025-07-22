@@ -1,7 +1,7 @@
 'use client';
 
 import Skills from '@/components/Skills';
-import React, { JSX } from 'react';
+import React from 'react';
 
 
 

@@ -1,10 +1,11 @@
 'use client';
 
-import React, { JSX } from 'react';
+import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
+import Image from 'next/image'
 
-export default function Hero(): JSX.Element {
+export default function Hero() {
   return (
     <div className='bg-[#1E1E1E] w-3/4 mx-auto pe-5 my-10 rounded-lg'>
 
@@ -13,7 +14,14 @@ export default function Hero(): JSX.Element {
         <div className='scale-105 bg-zinc-900  w-120'>
           <div className=' h-110 w-90 overflow-hidden' >
 
-            <img className='fill' src="/image.jpg" alt="" />
+            <Image
+              src="/image.jpg"
+              alt="Profile Image"
+              width={360}
+              height={440}
+              className="object-cover"
+            />
+
 
           </div>
           <div className='my-4'>
@@ -41,11 +49,11 @@ export default function Hero(): JSX.Element {
 
             </div>
 
-            
+
           </div>
           <div>
             <div className="p-4 text-white rounded-lg my-4">
-              
+
               <a
                 href="/MyCV.pdf"
                 download
@@ -61,23 +69,23 @@ export default function Hero(): JSX.Element {
               </a>
             </div>
           </div>
-          
+
         </div>
         <div className='h-50 w-full ps-16 '>
-          
+
 
           <div className='my-10'>
-          <h1 className="text-3xl font-bold mb-3">
-        Hi, I'm <span className="text-indigo-600 dark:text-indigo-400">Mitkumar Parmar</span>
-      </h1>
+            <h1 className="text-3xl font-bold mb-3">
+              Hi, I&apos;m <span className="text-indigo-600 dark:text-indigo-400">Mitkumar Parmar</span>
+            </h1>
 
-      <p className="text-lg mb-4">
-        I'm a Full-Stack Web Developer with experience in building and deploying responsive full-stack web apps using <span className="font-medium text-indigo-500 dark:text-indigo-400">React, Node.js, MongoDB, and Next.js</span> . Proven ability to create scalable, user-focused solutions like Tripbnb (Airbnb clone) and a Finance Tracker with data visualizations. Seeking internship opportunities to contribute to real-world projects and grow in a fast-paced development environment.
-      </p>
+            <p className="text-lg mb-4">
+              I&apos;m a Full-Stack Web Developer with experience in building and deploying responsive full-stack web apps using <span className="font-medium text-indigo-500 dark:text-indigo-400">React, Node.js, MongoDB, and Next.js</span> . Proven ability to create scalable, user-focused solutions like Tripbnb (Airbnb clone) and a Finance Tracker with data visualizations. Seeking internship opportunities to contribute to real-world projects and grow in a fast-paced development environment.
+            </p>
 
-      <p className="mb-6 text-gray-600 dark:text-gray-400">
-        I like turning ideas into real-world, fast-performing web solutions. Let's build something awesome!
-      </p>
+            <p className="mb-6 text-gray-600 dark:text-gray-400">
+              I like turning ideas into real-world, fast-performing web solutions. Let&apos;s build something awesome!
+            </p>
           </div>
           <div className='my-14'>
             <ul className='flex flex-col gap-2 text-gray-300 text-lg'>
