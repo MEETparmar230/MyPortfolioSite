@@ -1,10 +1,11 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 import { zodResolver } from '@hookform/resolvers/zod'
+import ReCAPTCHA from 'react-google-recaptcha'
 import {
   Form,
   FormControl,
@@ -19,18 +20,17 @@ import { Button } from '@/components/ui/button'
 const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!
 const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID!
 const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY!
+const sitekey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!;
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: 'Username must be at least 2 characters.',
-  }),
+  username: z.string().min(2, { message: 'Username must be at least 2 characters.' }),
   email: z.string().email({ message: 'Enter a valid email' }),
-  message: z.string().min(5, {
-    message: 'Message must be at least 5 characters.',
-  }),
+  message: z.string().min(5, { message: 'Message must be at least 5 characters.' }),
 })
 
 export default function ContactMe() {
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null)
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -40,7 +40,16 @@ export default function ContactMe() {
     },
   })
 
+  const handleCaptchaChange = (token: string | null) => {
+    setCaptchaToken(token)
+  }
+
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    if (!captchaToken) {
+      alert('Please verify you are not a robot.')
+      return
+    }
+
     try {
       const response = await emailjs.send(
         serviceId,
@@ -62,8 +71,6 @@ export default function ContactMe() {
     }
   }
 
-
-
   return (
     <section className='my-10 lg:px-4 md:px-4'>
       <div className="bg-[#1E1E1E] lg:px-6 md:px-6 max-w-5xl mx-auto rounded-lg w-full">
@@ -73,14 +80,10 @@ export default function ContactMe() {
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#E0E0E0]">
                 Contact Me
               </h1>
-
             </div>
 
             <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="flex flex-wrap -m-2"
-              >
+              <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-wrap -m-2">
                 <div className="p-2 w-1/2 my-4">
                   <FormField
                     control={form.control}
@@ -107,7 +110,7 @@ export default function ContactMe() {
                         <FormControl>
                           <Input
                             type="email"
-                            {...field} 
+                            {...field}
                             className="text-gray-200 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-800"
                           />
                         </FormControl>
@@ -115,7 +118,6 @@ export default function ContactMe() {
                       </FormItem>
                     )}
                   />
-
                 </div>
 
                 <div className="p-2 w-full my-4">
@@ -134,6 +136,14 @@ export default function ContactMe() {
                         <FormMessage />
                       </FormItem>
                     )}
+                  />
+                </div>
+
+                <div className="p-2 w-full my-4 flex justify-center">
+                  <ReCAPTCHA
+                    sitekey={sitekey}
+                    onChange={handleCaptchaChange}
+                    
                   />
                 </div>
 
