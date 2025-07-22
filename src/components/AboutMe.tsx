@@ -59,7 +59,7 @@ export default function About(): JSX.Element {
             </div>
 
             <p className="text-lg leading-relaxed text-gray-300">
-              🚀 I'm currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">job opportunities</span> where I can contribute,
+              🚀 I&apos;m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">job opportunities</span> where I can contribute,
               grow, and help build impactful web applications.
             </p>
 
