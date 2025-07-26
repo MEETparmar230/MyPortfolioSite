@@ -11,7 +11,7 @@ export default function Projects(){
       {projects.map((project, i) => (
         <div
           key={i}
-          className="shadow-md flex flex-cols flex-wrap md:flex-row items-start md:items-center justify-center gap-6 my-4 mx-auto border border-gray-400 rounded-xl p-6 transition hover:shadow-lg"
+          className="shadow-md flex flex-cols flex-wrap md:flex-row items-start md:items-center justify-start gap-6 my-4 mx-auto border border-gray-400 rounded-xl p-6 transition hover:shadow-lg"
         >
           {/* Left Side: Video + Title */}
           <div className="min-w-70">
@@ -30,13 +30,13 @@ export default function Projects(){
             src={project.imageSrc}
             alt={project.title}
             
-            className="rounded-lg w-full border border-gray-700 object-cover md:h-64 md:h-80"
+            className="rounded-lg w-full border border-gray-700 object-cover  md:h-76"
             />
             }
           </div>
 
           {/* Right Side: Description, Stack, Links */}
-          <div className="flex flex-col gap-5  md:w-1/2 md:w-120 min-w-70">
+          <div className="flex flex-col gap-5  md:w-1/2 md:w-160 min-w-70">
             <div>
               <p className="font-semibold text-lg text-gray-300">Description:</p>
               <p className="bg-[#262626] px-3 py-2 rounded-md text-gray-400 text-sm leading-relaxed">
@@ -60,7 +60,7 @@ export default function Projects(){
 
             <div className="flex gap-5 mt-2">
               {project.liveLink!==''?<a
-                className="text-blue-400 hover:text-blue-500 hover:border-blue-500 underline px-2 border border-blue-400 rounded-md"
+                className="text-indigo-400 hover:text-indigo-500 hover:border-indigo-500 underline px-2 border border-indigo-400 rounded-md"
                 href={project.liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -69,7 +69,7 @@ export default function Projects(){
               </a>
             :
               <a
-                className="text-blue-400 hover:text-blue-500 hover:border-blue-500 underline  px-2 border border-blue-400 rounded-md"
+                className="text-indigo-400 hover:text-indigo-500 hover:border-indigo-500 underline  px-2 border border-indigo-400 rounded-md"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,7 +78,7 @@ export default function Projects(){
                  
             }
               <a
-                className="text-blue-400 hover:text-blue-500 hover:border-blue-500 underline  px-2 border border-blue-400 rounded-md"
+                className="text-indigo-400 hover:text-indigo-500 hover:border-indigo-500 underline  px-2 border border-indigo-400 rounded-md"
                 href={project.githubRepo}
                 target="_blank"
                 rel="noopener noreferrer"

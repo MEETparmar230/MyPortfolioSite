@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='w-3/4 mx-auto'>
+    <div className='md:w-3/4  md:mx-auto mx-4'>
      <AboutMe/> 
     </div>
   )

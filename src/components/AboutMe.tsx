@@ -9,7 +9,7 @@ export default function About(): JSX.Element {
       <div className="mx-auto">
         
 
-        <div className="bg-[#1E1E1E] text-gray-200 py-10 px-6 rounded-lg shadow-lg">
+        <div className="bg-[#1E1E1E] text-gray-200 md:py-10 py-4 px-6 rounded-lg shadow-lg">
           <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">About Me</h1>
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-300">
