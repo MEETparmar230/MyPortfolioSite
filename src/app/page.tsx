@@ -9,13 +9,10 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div className='md:w-3/4 lg:w-3/4 md:mx-auto lg:mx-auto mx-4 flex flex-col gap-5'>
+    <div className='md:w-3/4 md:mx-auto lg:mx-auto mx-2 flex flex-col gap-14 mt-10'>
       <Hero />
       <AboutMe />
-    
-      <div className='max-w-5xl mx-auto'>
       <Projects />
-      </div>
       <Skills />
       <ContactMe />
     </div>

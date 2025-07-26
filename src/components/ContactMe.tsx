@@ -72,19 +72,21 @@ export default function ContactMe() {
   }
 
   return (
-    <section className='my-10 lg:px-4 md:px-4'>
-      <div className="bg-[#1E1E1E] lg:px-6 md:px-6 max-w-5xl mx-auto rounded-lg w-full">
-        <section className="text-gray-600 body-font relative w-3xl mx-auto">
+    <section className='md:w-fit w-full mx-auto'>
+      <div className="bg-[#1E1E1E] lg:px-6 md:px-6  mx-auto rounded-lg w-full">
+        <section className="text-gray-600 body-font relative max-w-3xl md:mx-auto">
           <div className="container px-5 py-10 mx-auto">
             <div className="flex flex-col text-center w-full mb-8">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#E0E0E0]">
+              <h1 className="sm:text-3xl text-2xl font-medium title-font  text-[#E0E0E0]">
                 Contact Me
               </h1>
             </div>
 
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-wrap -m-2">
-                <div className="p-2 w-1/2 my-4">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="md:flex md:flex-row flex-wrap flex flex-col gap-4 md:gap-0">
+                
+
+                <div className="p-2 md:w-1/2 md:my-4">
                   <FormField
                     control={form.control}
                     name="username"
@@ -100,7 +102,7 @@ export default function ContactMe() {
                   />
                 </div>
 
-                <div className="p-2 w-1/2 my-4">
+                <div className="p-2 md:w-1/2 md:my-4">
                   <FormField
                     control={form.control}
                     name="email"
@@ -120,7 +122,7 @@ export default function ContactMe() {
                   />
                 </div>
 
-                <div className="p-2 w-full my-4">
+                <div className="p-2 w-full md:my-4">
                   <FormField
                     control={form.control}
                     name="message"
