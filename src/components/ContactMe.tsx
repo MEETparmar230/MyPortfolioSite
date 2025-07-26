@@ -141,7 +141,7 @@ export default function ContactMe() {
                   />
                 </div>
 
-                <div className="p-2 w-full my-4 flex justify-center">
+                <div className="p-2 w-full md:my-4 flex justify-center">
                   <ReCAPTCHA
                     sitekey={sitekey}
                     onChange={handleCaptchaChange}
@@ -149,7 +149,7 @@ export default function ContactMe() {
                   />
                 </div>
 
-                <div className="p-2 w-full my-4">
+                <div className="p-2 w-full md:my-4">
                   <Button
                     type="submit"
                     className="flex mx-auto text-indigo-500 bg-white border-2 border-indigo-500 hover:bg-indigo-500 hover:text-white py-2 px-8 rounded text-lg"

@@ -88,7 +88,7 @@ useEffect(() => {
           {navToggle && (
             <div
               ref={menuRef}
-              className="flex flex-col gap-2 absolute -start-20 rounded-lg py-4 px-4 mt-4 bg-zinc-800 z-50 w-30 text-white"
+              className="flex flex-col gap-2 absolute -start-13 rounded-lg py-4 px-4 mt-6 bg-zinc-800 z-50 w-30 text-white"
             >
               {navLinks.map((link: NavLink) => (
                 <Link
