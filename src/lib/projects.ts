@@ -40,8 +40,8 @@ const projects: Project[] = [
       "A simple To-Do List web application built using the MERN stack. Users can create, read, update, and delete tasks, with a user-friendly interface.",
     techStack: ["React", "Node.js", "Tailwind CSS", "Express", "MongoDB", "Mongoose"],
     
-    imageSrc: "myImage.png",
-    liveLink: "",
+    imageSrc: "projectImages/Todo.png",
+    liveLink: "https://my-to-do-app-blue.vercel.app/",
     githubRepo: "https://github.com/MEETparmar230/My-To-do-app",
     
   

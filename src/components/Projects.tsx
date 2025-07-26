@@ -11,15 +11,15 @@ export default function Projects(){
       {projects.map((project, i) => (
         <div
           key={i}
-          className="shadow-md flex flex-col md:flex-row items-start md:items-center justify-center gap-6 my-4 mx-auto border border-gray-400 rounded-xl p-6 transition hover:shadow-lg"
+          className="shadow-md flex flex-cols flex-wrap md:flex-row items-start md:items-center justify-center gap-6 my-4 mx-auto border border-gray-400 rounded-xl p-6 transition hover:shadow-lg"
         >
           {/* Left Side: Video + Title */}
-          <div className="w-full md:w-1/2">
+          <div className="min-w-70">
             <h2 className="mb-3 text-2xl font-bold text-indigo-400">{project.title}</h2>
             {project.videoSrc && project.videoSrc!==''?
             <video
               controls
-              className="rounded-lg w-full border border-gray-700"
+              className="rounded-lg w-full border border-gray-700 md:h-80"
               preload="metadata"
             >
               <source src={project.videoSrc} type="video/mp4" />
@@ -30,13 +30,13 @@ export default function Projects(){
             src={project.imageSrc}
             alt={project.title}
             
-            className="rounded-lg w-full border border-gray-700 object-cover h-64 h-80"
+            className="rounded-lg w-full border border-gray-700 object-cover md:h-64 md:h-80"
             />
             }
           </div>
 
           {/* Right Side: Description, Stack, Links */}
-          <div className="flex flex-col gap-5 w-full md:w-1/2">
+          <div className="flex flex-col gap-5  md:w-1/2 md:w-120 min-w-70">
             <div>
               <p className="font-semibold text-lg text-gray-300">Description:</p>
               <p className="bg-[#262626] px-3 py-2 rounded-md text-gray-400 text-sm leading-relaxed">

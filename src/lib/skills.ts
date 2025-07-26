@@ -7,6 +7,9 @@ type Skills = {
 const skills: Skills = {
     frontEnd: [
         'React',
+        'Next.js',
+        'TypeScript',
+        'Redux',
         'Tailwind',
         'Vite',
         'HTML',
