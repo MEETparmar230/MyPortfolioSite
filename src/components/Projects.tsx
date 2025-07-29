@@ -2,15 +2,39 @@
 
 import React from 'react';
 import projects from '../lib/projects';
+import { motion } from "framer-motion";
+
 
 export default function Projects(){
   return (
+    <motion.div
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+>
     <div className='bg-[#1A1A1A] md:p-7 p-2 rounded-lg shadow-lg'>
     <div className=" text-gray-100  mx-auto">
       <h1 className='text-3xl md:text-4xl lg:text-4xl font-semibold'>Projects</h1>
+      
       {projects.map((project, i) => (
+        <motion.div
+         key={i}
+  variants={{
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.2 },
+    }),
+  }}
+  initial="hidden"
+  whileInView="visible"
+  custom={i} // pass index of the card
+  viewport={{ once: true }}
+>
         <div
-          key={i}
+         
           className="shadow-md flex flex-cols flex-wrap md:flex-row items-start md:items-center justify-start gap-6 my-4 mx-auto border border-gray-400 rounded-xl p-6 transition hover:shadow-lg"
         >
           {/* Left Side: Video + Title */}
@@ -88,8 +112,10 @@ export default function Projects(){
             </div>
           </div>
         </div>
-      ))}
+       
+      </motion.div>))} 
     </div>
     </div>
+    </motion.div>
   );
 }

@@ -2,9 +2,15 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
+    <motion.div
+  initial={{ y: 100 }}
+  animate={{ y: 0 }}
+  transition={{ duration: 0.5 }}
+  >
     <footer className="bg-[#1E1E1E] text-gray-300 py-6 border-t border-gray-700 mt-10 absolute w-full">
       <div className="max-w-5xl mx-auto text-center px-4">
         
@@ -30,5 +36,6 @@ export default function Footer() {
         <p className="text-xs text-gray-500 mt-4">&copy; {new Date().getFullYear()} Mitkumar Parmar. All rights reserved.</p>
       </div>
     </footer>
+    </motion.div>
   );
 }

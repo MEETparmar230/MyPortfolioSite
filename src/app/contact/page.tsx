@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='md:w-3/4 md:min-h-180 flex-grow md:mx-auto mx-4 '>
+    <div className='md:w-3/4 md:min-h-172 flex-grow md:mx-auto mx-4 mt-6'>
       <ContactMe/>
     </div>
   )

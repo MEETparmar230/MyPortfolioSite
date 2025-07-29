@@ -1,75 +1,152 @@
 'use client';
 
 import React, { JSX } from 'react';
-
+import { motion } from 'framer-motion';
 
 export default function About(): JSX.Element {
   return (
-    <section className="">
-      <div className="mx-auto">
-        
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
+      <section className="">
+        <div className="mx-auto">
+          <div className="bg-[#1E1E1E] text-gray-200 md:py-10 md:my-6 py-4 px-6 rounded-lg shadow-lg">
+            <motion.h1
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-3xl md:text-4xl font-bold mb-6 text-white"
+            >
+              About Me
+            </motion.h1>
 
-        <div className="bg-[#1E1E1E] text-gray-200 md:py-10 py-4 px-6 rounded-lg shadow-lg">
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-white">About Me</h1>
-          <div className="space-y-6">
-            <p className="text-lg leading-relaxed text-gray-300">
-              Hi! I&apos;m <span className="text-indigo-400 font-semibold">Mitkumar Parmar</span>, a passionate full-stack web developer focused on building clean,
-              responsive, and user-centric web applications.
-            </p>
+            <div className="space-y-6">
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="text-lg leading-relaxed text-gray-300"
+              >
+                Hi! I&apos;m <span className="text-indigo-400 font-semibold">Mitkumar Parmar</span>, a passionate full-stack web developer focused on building clean,
+                responsive, and user-centric web applications.
+              </motion.p>
 
-            <p className="text-lg leading-relaxed text-gray-300">
-              💻 I specialize in the <span className="text-indigo-400">MERN stack</span> (MongoDB, Express.js, React, Node.js), and have built real-world projects like:
-            </p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-lg leading-relaxed text-gray-300"
+              >
+                💻 I specialize in the <span className="text-indigo-400">MERN stack</span> (MongoDB, Express.js, React, Node.js), and have built real-world projects like:
+              </motion.p>
 
-            <ul className="list-disc list-inside text-gray-400 space-y-1">
-              <li>
-                <strong className="text-indigo-400">TripBNB</strong> an Airbnb clone with map integration, image uploads, authentication, and reviews.
-              </li>
-              <li>
-                <strong className="text-indigo-400">Personal Finance Visualizer</strong>  a tool for tracking expenses, budgets, and insights, built using
-                Next.js, MongoDB, Recharts, and Tailwind.
-              </li>
-            </ul>
+              <ul className="list-disc list-inside text-gray-400 space-y-3">
+                <motion.li
+                  className="text-lg leading-relaxed text-gray-300"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <strong className="text-indigo-400">TripBNB</strong> — an Airbnb clone with map integration, image uploads, authentication, and reviews.
+                </motion.li>
 
-            <p className="text-lg leading-relaxed text-gray-300">
-              🔧 I&apos;m comfortable using tools like <span className="text-indigo-400">Git, Postman, Vercel, Render,</span> and <span className="text-indigo-400">Cloudinary</span> to manage
-              workflows and deploy full-stack apps.
-            </p>
-
-            <p className="text-lg leading-relaxed text-gray-300">
-              👨‍💻 What drives me is the joy of turning ideas into real-world solutions, constantly learning new technologies, and writing scalable, efficient code.
-            </p>
-
-            <p className="text-lg leading-relaxed text-gray-300">
-              Outside of coding, I enjoy exploring design tools, improving UI/UX, and experimenting with personal projects that challenge me creatively and technically.
-            </p>
-
-            <div>
-              <h2 className="text-2xl font-semibold mt-8 mb-3 text-white">🛠 Technologies I Work With</h2>
-              <ul className="list-disc list-inside text-gray-400 space-y-1">
-                <li>
-                  <strong className="text-indigo-400">Frontend:</strong> React, Next.js, Tailwind CSS, HTML5, JavaScript
-                </li>
-                <li>
-                  <strong className="text-indigo-400">Backend:</strong> Node.js, Express.js, MongoDB
-                </li>
-                <li>
-                  <strong className="text-indigo-400">Tools & Platforms:</strong> Git, GitHub, Postman, Cloudinary, Vercel, Render
-                </li>
+                <motion.li
+                  className="text-lg leading-relaxed text-gray-300"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                >
+                  <strong className="text-indigo-400">Personal Finance Visualizer</strong> — a tool for tracking expenses, budgets, and insights, built using Next.js, MongoDB, Recharts, and Tailwind.
+                </motion.li>
               </ul>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="text-lg leading-relaxed text-gray-300"
+              >
+                🔧 I&apos;m comfortable using tools like <span className="text-indigo-400">Git, Postman, Vercel, Render</span>, and <span className="text-indigo-400">Cloudinary</span> to manage workflows and deploy full-stack apps.
+              </motion.p>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="text-lg leading-relaxed text-gray-300"
+              >
+                👨‍💻 What drives me is the joy of turning ideas into real-world solutions, constantly learning new technologies, and writing scalable, efficient code.
+              </motion.p>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="text-lg leading-relaxed text-gray-300"
+              >
+                Outside of coding, I enjoy exploring design tools, improving UI/UX, and experimenting with personal projects that challenge me creatively and technically.
+              </motion.p>
+
+              <motion.h2
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-2xl font-semibold mt-8 mb-3 text-white"
+              >
+                🛠 Technologies I Work With
+              </motion.h2>
+
+              <ul className="list-disc list-inside text-gray-400 space-y-3">
+                <motion.li
+                  className="text-lg leading-relaxed text-gray-300"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                >
+                  <strong className="text-indigo-400">Frontend:</strong> React, Next.js, Tailwind CSS, HTML5, JavaScript
+                </motion.li>
+                <motion.li
+                  className="text-lg leading-relaxed text-gray-300"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <strong className="text-indigo-400">Backend:</strong> Node.js, Express.js, MongoDB
+                </motion.li>
+                <motion.li
+                  className="text-lg leading-relaxed text-gray-300"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                >
+                  <strong className="text-indigo-400">Tools & Platforms:</strong> Git, GitHub, Postman, Cloudinary, Vercel, Render
+                </motion.li>
+              </ul>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="text-lg leading-relaxed text-gray-300"
+              >
+                🚀 I&apos;m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">job opportunities</span> where I can contribute, grow, and help build impactful web applications.
+              </motion.p>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="text-lg leading-relaxed text-gray-300"
+              >
+                Let&apos;s connect and create something awesome together!
+              </motion.p>
             </div>
-
-            <p className="text-lg leading-relaxed text-gray-300">
-              🚀 I&apos;m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">job opportunities</span> where I can contribute,
-              grow, and help build impactful web applications.
-            </p>
-
-            <p className="text-lg leading-relaxed text-gray-300">
-              Let&apos;s connect and create something awesome together!
-            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </motion.div>
   );
 }

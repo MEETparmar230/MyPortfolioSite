@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import { motion } from "framer-motion";
 
 const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!
 const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID!
@@ -72,6 +73,12 @@ export default function ContactMe() {
   }
 
   return (
+    <motion.div
+  initial={{ opacity: 0, y: 100 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+>
     <section className='md:w-fit w-full mx-auto'>
       <div className="bg-[#1E1E1E] lg:px-6 md:px-6  mx-auto rounded-lg w-full">
         <section className="text-gray-600 body-font relative max-w-3xl md:mx-auto">
@@ -163,5 +170,6 @@ export default function ContactMe() {
         </section>
       </div>
     </section>
+    </motion.div>
   )
 }

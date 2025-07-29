@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";  
 
 type NavLink = {
   href: string;
@@ -52,6 +53,11 @@ useEffect(() => {
   }, [navToggle]);
 
   return (
+    <motion.nav
+  initial={{ y: -100 }}
+  animate={{ y: 0 }}
+  transition={{ duration: 0.5 }}
+>
     <header className="text-gray-600 body-font dark:text-gray-300">
       <div className="container mx-auto flex flex-wrap p-5 items-center ">
         <Link
@@ -105,5 +111,6 @@ useEffect(() => {
         </div>
       </div>
     </header>
+    </motion.nav>
   );
 }
