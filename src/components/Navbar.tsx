@@ -17,6 +17,7 @@ export default function Navbar() {
   const [navToggle, setNavToggle] = useState(false);
   const path = usePathname()
   const menuRef = useRef<HTMLDivElement>(null)
+  const iconRef = useRef<HTMLDivElement>(null);
 
   const handleToggle = () => {
     setNavToggle(prev => !prev);
@@ -37,20 +38,25 @@ export default function Navbar() {
   ]
 
 useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setNavToggle(false);
-      }
-    };
-
-    if (navToggle) {
-      document.addEventListener("mousedown", handleClickOutside);
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target as Node) &&
+      iconRef.current &&
+      !iconRef.current.contains(event.target as Node)
+    ) {
+      setNavToggle(false);
     }
+  };
 
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [navToggle]);
+  if (navToggle) {
+    document.addEventListener("mousedown", handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [navToggle]);
 
   return (
     <motion.nav
@@ -59,13 +65,8 @@ useEffect(() => {
   transition={{ duration: 0.5 }}
 >
     <header className="text-gray-600 body-font dark:text-gray-300">
-      <div className="container mx-auto flex flex-wrap p-5 items-center ">
-        <Link
-          className="flex title-font font-medium items-center text-gray-900 dark:text-white  md:mb-0 bg-gray-200 rounded-2xl h-14"
-          href="/"
-        >
-          <Image className="w-50" src="/Signature.png" alt="Signature" height={50} width={150}/>
-        </Link>
+      <div className="container mx-auto flex flex-wrap pt-5 items-center ">
+        
 
         {/* Desktop Nav Links */}
         <div className="md:ml-auto hidden md:flex items-center text-base space-x-5">
@@ -88,27 +89,37 @@ useEffect(() => {
 
         {/* Mobile Menu */}
          <div className="md:hidden block ms-auto px-5 relative">
-          <div className="hover:border p-1 rounded-2xl">
-            <FaBars onClick={handleToggle} className="hover:text-gray-700 dark:hover:text-white" />
-          </div>
-          {navToggle && (
-            <div
-              ref={menuRef}
-              className="flex flex-col gap-2 absolute -start-13 rounded-lg py-4 px-4 mt-6 bg-zinc-800 z-50 w-30 text-white"
-            >
-              {navLinks.map((link: NavLink) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  onClick={handleClose}
-                  className={`hover:text-indigo-500 ${path === link.href ? 'text-indigo-500' : ''}`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
+  {/* Keep ref on the icon container */}
+  <div
+    ref={iconRef}
+    className="hover:border p-1 rounded-2xl"
+    onClick={handleToggle}
+  >
+    <FaBars className="hover:text-gray-700 dark:hover:text-white mb-5" />
+  </div>
+
+  {navToggle && (
+     <motion.div
+  initial={{ x: 100 }}
+  animate={{ x: 0 }}
+  transition={{ duration: 0.5 }}
+
+      ref={menuRef}
+      className="flex flex-col gap-3 absolute -start-26 rounded-lg py-4 px-4 mt-0 bg-zinc-800 z-50 w-40 text-white h-60 "
+    >
+      {navLinks.map((link: NavLink) => (
+        <Link
+          key={link.label}
+          href={link.href}
+          onClick={handleClose}
+          className={` hover:text-indigo-500 ${path === link.href ? 'text-indigo-500' : ''}`}
+        >
+          {link.label}
+        </Link>
+      ))}
+    </motion.div>
+  )}
+</div>
       </div>
     </header>
     </motion.nav>
