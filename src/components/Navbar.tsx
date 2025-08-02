@@ -3,7 +3,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { FaBars } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";  

@@ -1,6 +1,6 @@
 type SkillItem = {
   name: string;
-  icon: string; // path to the image or logo
+  icon: string; 
 };
 
 type Skills = {
