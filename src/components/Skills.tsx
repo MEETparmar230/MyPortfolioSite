@@ -12,7 +12,7 @@ export default function Skills() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <section className="">
+      <section className="md:my-10">
         <div className="mx-auto">
 
           <div className="bg-[#1E1E1E] p-6 md:p-8 rounded-lg shadow-md text-gray-200">
@@ -27,7 +27,7 @@ export default function Skills() {
                 viewport={{ once: true }}
                 className="text-xl font-semibold mb-3 text-indigo-400">Frontend
               </motion.h2>
-              <ul className="flex flex-wrap gap-4 border justify-center border-gray-400 rounded-lg py-4 min-h-24">
+              <ul className="flex flex-wrap gap-3 sm:gap-2 border justify-center border-gray-400 rounded-lg py-4 ">
                 {skills.frontEnd.map((skill, i) => (
                   <motion.li
   key={i}
@@ -39,7 +39,7 @@ export default function Skills() {
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.95 }}
 >
-   <div className='gird grid-cols-1 w-20 h-20 gap-1 items-center justify-center flex flex-col'>
+   <div className='gird grid-cols-1 w-20 sm:w-18 gap-1 items-center justify-center flex flex-col'>
      <img className="h-10 w-10 object-contain" src={skill.icon} />
                   <span>{skill.name}</span>
   </div>
@@ -57,7 +57,7 @@ export default function Skills() {
                 viewport={{ once: true }}
                 className="text-xl font-semibold mb-3 text-indigo-400">Backend
               </motion.h2>
-              <ul className="flex flex-wrap gap-3 border border-gray-400 justify-center rounded-lg py-4 min-h-24">
+              <ul className="flex flex-wrap gap-3 sm:gap-2 border border-gray-400 justify-center rounded-lg py-4 ">
                 {skills.backEnd.map((skill, i) => (
                   <motion.li
   key={i}
@@ -69,7 +69,7 @@ export default function Skills() {
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.95 }}
 >
-   <div className='w-20 h-20  gap-1 items-center justify-center flex flex-col'>
+   <div className='w-20 sm:w-18 gap-1 items-center justify-center flex flex-col'>
      <img className="h-10 w-10 object-contain" src={skill.icon} />
                   <span>{skill.name}</span>
   </div>
@@ -89,7 +89,7 @@ export default function Skills() {
                 className="text-xl font-semibold mb-3 text-indigo-400">Tools
 
               </motion.h2>
-              <ul className="flex flex-wrap gap-3 border border-gray-400 justify-center rounded-lg py-4 min-h-24 ">
+              <ul className="flex flex-wrap gap-3 sm:gap-2 border border-gray-400 justify-center rounded-lg py-4  ">
                 {skills.tools.map((skill, i) => (
                  <motion.li
   key={i}
@@ -101,7 +101,7 @@ export default function Skills() {
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.95 }}
 >
-  <div className=' w-20 h-20 gap-1 items-center justify-center flex flex-col'>
+  <div className=' w-20 sm:w-18 gap-1 items-center justify-center flex flex-col'>
      <img className="h-10 w-10 object-contain" src={skill.icon} />
                   <span>{skill.name}</span>
   </div>

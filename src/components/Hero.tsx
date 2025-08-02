@@ -19,7 +19,7 @@ const MotionImage = motion(Image);
   viewport={{ once: true }}
 >
   
-    <div className="bg-[#1E1E1E] w-full  mx-auto p-4 md:p-6 rounded-lg">
+    <div className="bg-[#1E1E1E] w-full md:my-10 mx-auto p-4 md:p-6 rounded-lg">
       <div className="flex flex-col  md:flex-row gap-8 items-center md:items-start justify-center">
         {/* Profile Card */}
         <div className="bg-zinc-900 rounded-lg w-full md:max-w-xs p-4">

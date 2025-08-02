@@ -79,7 +79,7 @@ export default function ContactMe() {
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
 >
-    <section className='md:w-fit w-full mx-auto'>
+    <section className='md:w-fit md:my-10 w-full mx-auto'>
       <div className="bg-[#1E1E1E] lg:px-6 md:px-6  mx-auto rounded-lg w-full">
         <section className="text-gray-600 body-font relative max-w-3xl md:mx-auto">
           <div className="container px-5 py-10 mx-auto">

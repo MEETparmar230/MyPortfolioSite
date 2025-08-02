@@ -7,7 +7,7 @@ import React from 'react';
 
 export default function page() {
   return (
-    <div className='md:w-3/4 md:min-h-180 lg:w-3/4 px-4  mx-auto md:pt-10 md:pb-26 '>
+    <div className='md:w-3/4 md:min-h-180 lg:w-3/4 px-4  mx-auto mb-5 '>
       <Skills/>
     </div>
   )

@@ -11,7 +11,7 @@ export default function About(): JSX.Element {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <section className="">
+      <section className="md:my-10">
         <div className="mx-auto">
           <div className="bg-[#1E1E1E] text-gray-200 md:py-10 md:my-6 py-4 px-6 rounded-lg shadow-lg">
             <motion.h1

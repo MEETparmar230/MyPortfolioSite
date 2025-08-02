@@ -13,7 +13,7 @@ export default function Projects(){
   transition={{ duration: 0.6 }}
   viewport={{ once: true }}
 >
-    <div className='bg-[#1A1A1A] md:p-7 p-2 rounded-lg shadow-lg'>
+    <div className='bg-[#1A1A1A] md:p-7 md:my-10 p-2 rounded-lg shadow-lg'>
     <div className=" text-gray-100  mx-auto">
       <h1 className='text-3xl md:text-4xl lg:text-4xl font-semibold'>Projects</h1>
       

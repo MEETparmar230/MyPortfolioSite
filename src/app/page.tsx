@@ -13,7 +13,7 @@ export default function Home() {
    
 
 
-    <div className='md:w-3/4 md:mx-auto lg:mx-auto mx-2 flex flex-col gap-14 md:mt-10 '>
+    <div className='md:w-3/4 md:mx-auto lg:mx-auto mx-2 flex flex-col gap-14 md:my-10 mb-5'>
    
       <Hero />
       <AboutMe />
