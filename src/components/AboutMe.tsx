@@ -19,6 +19,7 @@ export default function About(): JSX.Element {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-3xl md:text-4xl font-bold mb-6 text-white"
+              viewport={{ once: true }}
             >
               About Me
             </motion.h1>
