@@ -11,6 +11,18 @@ type Project = {
 };
 const projects: Project[] = [
   {
+    title: "GramBazaar",
+    description:
+      "GramBazaar (Village Kart) is a Next.js 15 MERN Stack e-commerce platform built as a full-stack project. It allows users to explore rural products, book and pay securely via Stripe Sandbox, and provides a separate Admin Dashboard for managing the platform.",
+    techStack: ["Next.js", "Tailwind CSS", "Zod", "MongoDB", "Stripe", "Cloudinary", "JWT","bcrypt","React Hot Toast","Vercel"],
+    imageSrc: "/projectImages/financeVisualizer.png",
+   
+    liveLink: "https://gram-bazaar.vercel.app/",
+    githubRepo: "https://github.com/MEETparmar230/GramBazaar",
+    
+  
+  },
+  {
     title: "TripBNB",
     description:
       "A full-stack Airbnb clone built with the MERN stack. Users can list, search, and book rentals.",
@@ -47,5 +59,6 @@ const projects: Project[] = [
   
   },
 ];
+
 
 export default projects;
