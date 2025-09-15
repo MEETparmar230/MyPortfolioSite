@@ -38,7 +38,7 @@ export default function Projects(){
           className="shadow-md flex flex-cols flex-wrap md:flex-row items-start md:items-center justify-start gap-6 my-4 mx-auto border border-gray-400 rounded-xl p-6 transition hover:shadow-lg"
         >
           {/* Left Side: Video + Title */}
-          <div className="min-w-70">
+          <div className="min-w-70 max-w-140">
             <h2 className="mb-3 text-2xl font-bold text-indigo-400">{project.title}</h2>
             {project.videoSrc && project.videoSrc!==''?
             <video
