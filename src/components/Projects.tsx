@@ -60,7 +60,7 @@ export default function Projects(){
           </div>
 
           {/* Right Side: Description, Stack, Links */}
-          <div className="flex flex-col gap-5  md:w-1/2 md:w-160 min-w-70">
+          <div className="flex flex-col gap-5   md:max-w-180 min-w-70">
             <div>
               <p className="font-semibold text-lg text-gray-300">Description:</p>
               <p className="bg-[#262626] px-3 py-2 rounded-md text-gray-400 text-sm leading-relaxed">
