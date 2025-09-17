@@ -25,7 +25,10 @@ const skills: Skills = {
     { name: 'Express', icon: '/icons/express.svg' },
     { name: 'Node.js', icon: '/icons/node.svg' },
     { name: 'MongoDB', icon: '/icons/mongodb.svg' },
+    { name: 'JWT', icon: '/icons/jwt.svg' },
+    { name: 'Bcrypt', icon: '/icons/bcrypt.svg' },
     { name: 'PassportJs', icon: '/icons/passportjs.png' },
+
   ],
   tools: [
     { name: 'Git', icon: '/icons/git.svg' },
@@ -34,6 +37,7 @@ const skills: Skills = {
     { name: 'Vercel', icon: '/icons/vercel.svg' },
     { name: 'Render', icon: '/icons/render.png' },
     { name: 'Cloudinary', icon: '/icons/cloudinary.svg' },
+    { name: 'Stripe', icon: '/icons/stripe.svg' },
   ],
 };
 
