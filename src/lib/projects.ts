@@ -14,7 +14,7 @@ const projects: Project[] = [
     title: "GramBazaar",
     description:
       "GramBazaar (Village Kart) is a Next.js 15 MERN Stack e-commerce platform built as a full-stack project. It allows users to explore rural products, book and pay securely via Stripe Sandbox, and provides a separate Admin Dashboard for managing the platform.",
-    techStack: ["Next.js", "Tailwind CSS", "Zod", "MongoDB", "Stripe", "Cloudinary", "JWT","bcrypt","React Hot Toast","Vercel"],
+    techStack: ["Next.js","Redux-Toolkit", "Tailwind CSS", "Zod", "MongoDB", "Stripe", "Cloudinary", "JWT","bcrypt","React Hot Toast","Vercel"],
     imageSrc: "/projectImages/Grambazaar.png",
    
     liveLink: "https://gram-bazaar.vercel.app/",
