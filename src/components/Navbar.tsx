@@ -64,7 +64,7 @@ useEffect(() => {
   transition={{ duration: 0.5 }}
 >
     <header className="text-gray-600 body-font dark:text-gray-300">
-      <div className="container mx-auto flex flex-wrap p-5 items-center ">
+      <div className="container mx-auto flex flex-wrap pt-5 md:mt-2 items-center ">
         
 
         {/* Desktop Nav Links */}
@@ -76,7 +76,7 @@ useEffect(() => {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`hover:text-indigo-500 ${path === link.href ? 'text-indigo-500' : ''}`}
+                className={`hover:text-indigo-500 text-lg ${path === link.href ? 'text-indigo-500' : ''}`}
               >
                 {link.label}
               </Link>
