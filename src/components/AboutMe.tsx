@@ -45,6 +45,16 @@ export default function About(): JSX.Element {
               </motion.p>
 
               <ul className="list-disc list-inside text-gray-400 space-y-3">
+
+                <motion.li
+                  className="text-lg leading-relaxed text-gray-300"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <strong className="text-indigo-400">Grambazaar</strong> — An e-commerce platform for exploring rural products with secure bookings, Stripe payments, and an admin dashboard.
+                </motion.li>
+
                 <motion.li
                   className="text-lg leading-relaxed text-gray-300"
                   initial={{ opacity: 0 }}
