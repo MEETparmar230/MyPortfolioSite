@@ -33,11 +33,13 @@ const skills: Skills = {
   tools: [
     { name: 'Git', icon: '/icons/git.svg' },
     { name: 'GitHub', icon: '/icons/githubOg.svg' },
+    { name: 'Docker', icon: '/icons/docker.svg' },
     { name: 'Postman', icon: '/icons/postman.svg' },
     { name: 'Vercel', icon: '/icons/vercel.svg' },
     { name: 'Render', icon: '/icons/render.png' },
     { name: 'Cloudinary', icon: '/icons/cloudinary.svg' },
     { name: 'Stripe', icon: '/icons/stripe.svg' },
+
   ],
 };
 

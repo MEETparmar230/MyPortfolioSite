@@ -13,7 +13,7 @@ const projects: Project[] = [
     {
     title: "Resume Analyzer",
     description:
-      "Resume Analyser is a full-stack application designed to help users instantly analyze resumes using AI and NLP.The frontend, built with React + TypeScript + TailwindCSS, allows users to upload PDF resumes.The backend in Java Spring Boot handles file uploads and communicates with a Python FastAPI microservice, which performs resume parsing, skill extraction, and keyword analysis using NLP models.Deployed across Vercel, Render, and Hugging Face Spaces for a seamless, multi-service integration.",
+      "Resume Analyser — A full-stack AI-powered web app that analyzes uploaded resumes and extracts key insights such as skills, experience, and strengths using NLP. Built with React (TypeScript), Spring Boot, and FastAPI (Python).",
     techStack: ["React.js","Spring-boot","FastAPI","nlp", "Tailwind CSS", "PostgreSQL", "Supabase","Vercel","Render","huggingface"],
     imageSrc: "/projectImages/resumeAnalyzer.png",
    
