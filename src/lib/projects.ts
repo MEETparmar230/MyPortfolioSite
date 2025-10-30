@@ -10,6 +10,18 @@ type Project = {
   challenges?: string;
 };
 const projects: Project[] = [
+    {
+    title: "Resume Analyzer",
+    description:
+      "Resume Analyser is a full-stack application designed to help users instantly analyze resumes using AI and NLP.The frontend, built with React + TypeScript + TailwindCSS, allows users to upload PDF resumes.The backend in Java Spring Boot handles file uploads and communicates with a Python FastAPI microservice, which performs resume parsing, skill extraction, and keyword analysis using NLP models.Deployed across Vercel, Render, and Hugging Face Spaces for a seamless, multi-service integration.",
+    techStack: ["React.js","Spring-boot","FastAPI","nlp", "Tailwind CSS", "PostgreSQL", "Supabase","Vercel","Render","huggingface"],
+    imageSrc: "/projectImages/resumeAnalyzer.png",
+   
+    liveLink: "https://resume-analyzer-blush-nine.vercel.app/",
+    githubRepo: "https://github.com/MEETparmar230/Resume-analyzer-client",
+    
+  
+  },
   {
     title: "GramBazaar",
     description:
