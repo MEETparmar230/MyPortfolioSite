@@ -41,10 +41,19 @@ export default function About(): JSX.Element {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-lg leading-relaxed text-gray-300"
               >
-                💻 I specialize in the <span className="text-indigo-400">MERN stack</span> (MongoDB, Express.js, React, Node.js), and have built real-world projects like:
+                💻 I specialize in the <span className="text-indigo-400">MERN stack</span> (MongoDB, Express.js, React, Node.js), and also work with <span className="text-indigo-400">Next.js, Java, and Spring Boot</span> to build reliable backend services and full-stack solutions like:
               </motion.p>
 
               <ul className="list-disc list-inside text-gray-400 space-y-3">
+
+                <motion.li
+                  className="text-lg leading-relaxed text-gray-300"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
+                >
+                  <strong className="text-indigo-400">Resume Analyzer</strong> — A web app that analyzes uploaded resumes and extracts key insights such as skills, experience, and strengths using NLP.
+                </motion.li>
 
                 <motion.li
                   className="text-lg leading-relaxed text-gray-300"
@@ -117,7 +126,7 @@ export default function About(): JSX.Element {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  <strong className="text-indigo-400">Frontend:</strong> React, Next.js, Tailwind CSS, HTML5, JavaScript
+                  <strong className="text-indigo-400">Frontend:</strong> React, Tailwind CSS, Redux Toolkit, GrapgQL.
                 </motion.li>
                 <motion.li
                   className="text-lg leading-relaxed text-gray-300"
@@ -125,7 +134,7 @@ export default function About(): JSX.Element {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                  <strong className="text-indigo-400">Backend:</strong> Node.js, Express.js, MongoDB
+                  <strong className="text-indigo-400">Backend:</strong> Spring-Boot, Express.js, MongoDB, SQL.
                 </motion.li>
                 <motion.li
                   className="text-lg leading-relaxed text-gray-300"
@@ -133,7 +142,7 @@ export default function About(): JSX.Element {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                  <strong className="text-indigo-400">Tools & Platforms:</strong> Git, GitHub, Postman, Cloudinary, Vercel, Render
+                  <strong className="text-indigo-400">Tools & Platforms:</strong> Git, Docker, Postman, Cloudinary, Vercel, Render
                 </motion.li>
               </ul>
 
@@ -143,7 +152,9 @@ export default function About(): JSX.Element {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="text-lg leading-relaxed text-gray-300"
               >
-                🚀 I&apos;m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">job opportunities</span> where I can contribute, grow, and help build impactful web applications.
+                <p>🚀 My goal is to grow as a developer, contribute to meaningful products, and continuously learn new technologies.</p>
+
+                <p className='ms-6'>I’m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">entry-level opportunities</span> in full-stack development.</p>
               </motion.p>
 
               <motion.p
@@ -152,7 +163,7 @@ export default function About(): JSX.Element {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className="text-lg leading-relaxed text-gray-300"
               >
-                Let&apos;s connect and create something awesome together!
+                Let’s connect and build something amazing!
               </motion.p>
             </div>
           </div>

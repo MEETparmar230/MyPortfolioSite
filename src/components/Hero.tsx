@@ -87,11 +87,10 @@ const MotionImage = motion(Image);
   whileTap={{ scale: 0.95 }}
 >
               <a
-                href="/MyCV.pdf"
-                download
+                href="/projects"
                 className="text-indigo-400 px-4 py-2 hover:text-gray-300 hover:bg-indigo-900 border border-indigo-500 rounded-lg mx-2 inline-block"
               >
-                Download Resume
+                View My Work
               </a>
               </motion.button>
               </motion.div>
@@ -131,17 +130,16 @@ className="text-3xl font-bold mb-3 text-white">
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
        className="text-lg text-gray-300 mb-4">
-              I&apos;m a Full-Stack Web Developer with experience in building and deploying responsive full-stack web apps using{' '}
-              <span className="font-medium text-indigo-500">React, Node.js, MongoDB, and Next.js</span>.
-              Proven ability to create scalable, user-focused solutions like Tripbnb (Airbnb clone) and a Finance Tracker with data visualizations.
-              Seeking internship opportunities to contribute to real-world projects and grow in a fast-paced development environment.
+              I&apos;m a Full-Stack Web Developer skilled in building and deploying responsive, scalable applications using{' '}
+              <span className="font-medium text-indigo-500">MERN Stack, Next.js, Java and Spring-Boot</span>.
+              I’ve developed real-world projects like a Resume Analyzer, GramBazaar (e-commerce platform with Stripe payments & admin dashboard), Tripbnb (Airbnb-style booking platform), and a Finance Tracker with rich data visualizations.
            </motion.p>
            <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
          className="text-gray-400">
-              I like turning ideas into real-world, fast-performing web solutions. Let&apos;s build something awesome!
+              I focus on clean UI/UX, performance optimization, and writing maintainable code. I’m currently seeking internship opportunities where I can contribute to impactful products and grow in a collaborative, fast-paced environment.
           </motion.p>
           </div>
 
