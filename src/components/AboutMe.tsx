@@ -70,7 +70,7 @@ export default function About(): JSX.Element {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                  <strong className="text-indigo-400">TripBNB</strong> —  It's a MERN-stack web application inspired by Airbnb, It allows users to browse listings, post their own stays, leave reviews, and much more.
+                  <strong className="text-indigo-400">TripBNB</strong> —  It&apos;s a MERN-stack web application inspired by Airbnb, It allows users to browse listings, post their own stays, leave reviews, and much more.
                 </motion.li>
 
                 <motion.li
@@ -154,7 +154,7 @@ export default function About(): JSX.Element {
               >
                 <h3>🚀 My goal is to grow as a developer, contribute to meaningful products, and continuously learn new technologies.</h3>
 
-                <h3 className='ms-6'>I’m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">entry-level opportunities</span> in full-stack development.</h3>
+                <h3 className='ms-6'>I&apos;m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">entry-level opportunities</span> in full-stack development.</h3>
               </motion.div>
 
               <motion.p
@@ -163,7 +163,7 @@ export default function About(): JSX.Element {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className="text-lg leading-relaxed text-gray-300"
               >
-                Let’s connect and build something amazing!
+                Let&apos;s connect and build something amazing!
               </motion.p>
             </div>
           </div>
