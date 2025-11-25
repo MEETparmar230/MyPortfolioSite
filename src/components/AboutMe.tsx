@@ -70,7 +70,7 @@ export default function About(): JSX.Element {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
                 >
-                  <strong className="text-indigo-400">TripBNB</strong> — an Airbnb clone with map integration, image uploads, authentication, and reviews.
+                  <strong className="text-indigo-400">TripBNB</strong> —  It's a MERN-stack web application inspired by Airbnb, It allows users to browse listings, post their own stays, leave reviews, and much more.
                 </motion.li>
 
                 <motion.li
@@ -89,7 +89,7 @@ export default function About(): JSX.Element {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="text-lg leading-relaxed text-gray-300"
               >
-                🔧 I&apos;m comfortable using tools like <span className="text-indigo-400">Git, Postman, Vercel, Render</span>, and <span className="text-indigo-400">Cloudinary</span> to manage workflows and deploy full-stack apps.
+                🔧 I&apos;m comfortable using tools like <span className="text-indigo-400">Git, Docker, Postman, Vercel, Render</span>, and <span className="text-indigo-400">Cloudinary</span> to manage workflows and deploy full-stack apps.
               </motion.p>
 
               <motion.p
@@ -146,16 +146,16 @@ export default function About(): JSX.Element {
                 </motion.li>
               </ul>
 
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="text-lg leading-relaxed text-gray-300"
               >
-                <p>🚀 My goal is to grow as a developer, contribute to meaningful products, and continuously learn new technologies.</p>
+                <h3>🚀 My goal is to grow as a developer, contribute to meaningful products, and continuously learn new technologies.</h3>
 
-                <p className='ms-6'>I’m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">entry-level opportunities</span> in full-stack development.</p>
-              </motion.p>
+                <h3 className='ms-6'>I’m currently open to <span className="text-white font-medium">internship</span> and <span className="text-white font-medium">entry-level opportunities</span> in full-stack development.</h3>
+              </motion.div>
 
               <motion.p
                 initial={{ opacity: 0 }}

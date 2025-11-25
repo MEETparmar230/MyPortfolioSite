@@ -50,7 +50,7 @@ const projects: Project[] = [
     title: "Personal-Finance-Visualizer",
     description:
       "A full-stack web application to help users track transactions, set monthly budgets, and visualize their spending trends. Built using Next.js, MongoDB, Recharts, and shadcn/ui.",
-    techStack: ["Next.js 14 (App Router)", "Next.js API Routes", "TypeScript","Recharts","Tailwind CSS", "shadcn/ui", "Mongoose", "MongoDB Atlas,"],
+    techStack: ["Next.js 14 ", "GraphQL API", "OAuth", "TypeScript","Recharts","Tailwind CSS", "shadcn/ui", "Mongoose", "MongoDB Atlas,"],
    
     imageSrc: "/projectImages/financeVisualizer.png",
     liveLink: "https://personal-finance-visualizer-kohl.vercel.app/",
