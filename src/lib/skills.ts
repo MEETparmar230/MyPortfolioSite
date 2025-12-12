@@ -16,18 +16,18 @@ const skills: Skills = {
     { name: 'TypeScript', icon: '/icons/typescript.svg' },
     { name: 'Redux', icon: '/icons/redux.svg' },
     { name: 'Tailwind', icon: '/icons/tailwind.svg' },
-    { name: 'Vite', icon: '/icons/vite.svg' },
+    { name: 'GraphQL', icon: '/icons/graphql.svg' },
     { name: 'HTML', icon: '/icons/html.svg' },
     { name: 'CSS', icon: '/icons/css3.svg' },
     { name: 'JavaScript', icon: '/icons/js.svg' },
   ],
   backEnd: [
-    { name: 'Express', icon: '/icons/express.svg' },
+    { name: 'Spring-Boot', icon: '/icons/springBoot.svg' },
     { name: 'Node.js', icon: '/icons/node.svg' },
     { name: 'MongoDB', icon: '/icons/mongodb.svg' },
     { name: 'JWT', icon: '/icons/jwt.svg' },
     { name: 'Bcrypt', icon: '/icons/bcrypt.svg' },
-    { name: 'PassportJs', icon: '/icons/passportjs.png' },
+    { name: 'SQL', icon: '/icons/pgsql.svg' },
 
   ],
   tools: [
@@ -35,10 +35,10 @@ const skills: Skills = {
     { name: 'GitHub', icon: '/icons/githubOg.svg' },
     { name: 'Docker', icon: '/icons/docker.svg' },
     { name: 'Postman', icon: '/icons/postman.svg' },
-    { name: 'Vercel', icon: '/icons/vercel.svg' },
-    { name: 'Render', icon: '/icons/render.png' },
     { name: 'Cloudinary', icon: '/icons/cloudinary.svg' },
     { name: 'Stripe', icon: '/icons/stripe.svg' },
+    { name: 'Vercel', icon: '/icons/vercel.svg' },
+    { name: 'Render', icon: '/icons/render.png' },
 
   ],
 };
