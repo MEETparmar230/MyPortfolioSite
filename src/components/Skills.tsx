@@ -14,7 +14,7 @@ export default function Skills() {
     >
       <section className="my-6 md:my-10">
         <div className="mx-auto">
-          <div className="bg-black shadow p-4 sm:p-6 md:p-8 rounded-lg shadow-md text-gray-200">
+          <div className="backdrop-blur-3xl shadow p-4 sm:p-6 md:p-8 rounded-lg shadow-md text-gray-200">
             {/* bg-[#1E1E1E] */}
             {/* Main Title */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-white">
