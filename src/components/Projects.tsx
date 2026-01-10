@@ -12,7 +12,8 @@ export default function Projects() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <div className='bg-[#1A1A1A] p-3 sm:p-5 md:p-7 my-6 md:my-10 rounded-lg shadow-lg'>
+      <div className='backdrop-blur-3xl p-3 sm:p-5 md:p-7 my-6 md:my-10 rounded-lg shadow-lg'>
+        {/* bg-[#1A1A1A] */}
         <div className="text-gray-100 mx-auto">
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold mb-6'>
             Projects
@@ -34,7 +35,7 @@ export default function Projects() {
               custom={i}
               viewport={{ once: true }}
             >
-              <div className="shadow-md my-6 mx-auto border border-gray-400 rounded-xl p-4 sm:p-5 md:p-6 transition-all duration-300 hover:shadow-lg hover:border-gray-300">
+              <div className=" shadow-md my-6 mx-auto border border-gray-400 rounded-xl p-4 sm:p-5 md:p-6 transition-all duration-300 hover:shadow-lg hover:border-gray-300">
                 
                 {/* Project Title - Always at top */}
                 <h2 className="mb-4 text-lg sm:text-xl md:text-2xl font-bold text-indigo-400">
@@ -69,24 +70,24 @@ export default function Projects() {
                     
                     {/* Description */}
                     <div>
-                      <p className="font-semibold text-base sm:text-lg text-gray-300 mb-2">
+                      <p className="font-semibold text-base sm:text-lg text-gray-200 mb-2">
                         Description:
                       </p>
-                      <p className="bg-[#262626] px-3 py-3 rounded-md text-gray-400 text-sm sm:text-base leading-relaxed">
+                      <p className="bg-zinc-900 [#262626] px-3 py-3 rounded-md text-zinc-200 text-sm sm:text-base leading-relaxed">
                         {project.description}
                       </p>
                     </div>
 
                     {/* Tech Stack */}
                     <div>
-                      <p className="font-semibold text-base sm:text-lg text-gray-300 mb-2">
+                      <p className="font-semibold text-base sm:text-lg text-gray-200 mb-2">
                         Tech Stack:
                       </p>
                       <ul className="flex flex-wrap gap-2">
                         {project.techStack.map((stackItem, i) => (
                           <li
                             key={i}
-                            className="border border-gray-500 text-gray-300 rounded-full px-2 sm:px-3 py-1 text-xs sm:text-sm bg-[#333333] transition-colors hover:bg-[#404040] hover:border-gray-400"
+                            className="border border-gray-500 text-gray-200 rounded-full px-2 sm:px-3 py-1 text-xs sm:text-sm bg-zinc-900 [#333333] transition-colors hover:bg-[#404040] hover:border-gray-400"
                           >
                             {stackItem}
                           </li>

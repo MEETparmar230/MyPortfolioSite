@@ -13,7 +13,8 @@ export default function About(): JSX.Element {
     >
       <section className="md:my-10">
         <div className="mx-auto">
-          <div className="bg-[#1E1E1E] text-gray-200 md:py-10 md:my-6 py-4 px-6 rounded-lg shadow-lg">
+          <div className="backdrop-blur-3xl text-gray-200 md:py-10 md:my-6 py-4 px-6 rounded-lg shadow-lg">
+            {/* bg-[#1E1E1E]  */}
             <motion.h1
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
