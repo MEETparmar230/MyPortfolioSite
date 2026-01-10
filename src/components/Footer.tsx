@@ -19,7 +19,7 @@ export default function Footer() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <footer className="bg-[#1E1E1E] text-gray-300 py-6 border-t border-gray-700 w-full">
+      <footer className="bg-black text-gray-300 py-6 border-t border-gray-700 w-full">
         <div className="max-w-5xl mx-auto text-center px-4">
           <div className="mt-4 flex justify-center gap-4">
             <a href="https://github.com/MEETparmar230" className="hover:text-indigo-400" aria-label="GitHub">
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           {year && (
-            <p className="text-xs text-gray-500 mt-4">
+            <p className="text-xs text-gray-200 mt-4">
               &copy; {year} Mitkumar Parmar. All rights reserved.
             </p>
           )}

@@ -28,6 +28,7 @@ const skills: Skills = {
     { name: 'JWT', icon: '/icons/jwt.svg' },
     { name: 'Bcrypt', icon: '/icons/bcrypt.svg' },
     { name: 'SQL', icon: '/icons/pgsql.svg' },
+    { name:'Redis', icon: '/icons/redis.svg'}
 
   ],
   tools: [

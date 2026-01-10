@@ -12,7 +12,7 @@ export default function Projects() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <div className='backdrop-blur-3xl p-3 sm:p-5 md:p-7 my-6 md:my-10 rounded-lg shadow-lg'>
+      <div className=' rounded-lg border-zinc-400 backdrop-blur-3xl p-3 sm:p-5 md:p-7 my-6 md:my-10 rounded-lg shadow-lg'>
         {/* bg-[#1A1A1A] */}
         <div className="text-gray-100 mx-auto">
           <h1 className='text-2xl sm:text-3xl md:text-4xl font-semibold mb-6'>
@@ -35,7 +35,7 @@ export default function Projects() {
               custom={i}
               viewport={{ once: true }}
             >
-              <div className=" shadow-md my-6 mx-auto border border-gray-400 rounded-xl p-4 sm:p-5 md:p-6 transition-all duration-300 hover:shadow-lg hover:border-gray-300">
+              <div className=" shadow-lg border border-zinc-500 my-6 mx-auto  rounded-xl p-4 sm:p-5 md:p-6 transition-all duration-300 hover:shadow-lg hover:border-gray-300">
                 
                 {/* Project Title - Always at top */}
                 <h2 className="mb-4 text-lg sm:text-xl md:text-2xl font-bold text-indigo-400">
