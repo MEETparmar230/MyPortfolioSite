@@ -27,7 +27,7 @@ const MotionImage = motion(Image);
   
           <div className="flex justify-center">
             <MotionImage
-          src="/myImage.png"
+          src="/me.png"
           alt="Profile Image"
           width={320}
           height={400}
